@@ -379,9 +379,12 @@ def ensure_file(rel):
     """Teil-Klon (--filter=blob:none --sparse): Datei erst bei Bedarf von GitHub holen."""
     p = os.path.join(ROOT, rel)
     if not os.path.exists(p):
-        r = sh('git', '-C', ROOT, 'checkout', 'HEAD', '--', rel)
-        if r.returncode or not os.path.exists(p):
-            raise SystemExit(f'Datei nicht ladbar: {rel}: {r.stderr.strip()[-200:]}')
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        with open(p, 'wb') as f:
+            r = subprocess.run(['git', '-C', ROOT, 'show', f'HEAD:{rel}'], stdout=f, stderr=subprocess.PIPE)
+        if r.returncode or not os.path.getsize(p):
+            os.remove(p)
+            raise SystemExit(f'Datei nicht ladbar: {rel}: {r.stderr.decode().strip()[-200:]}')
     return p
 
 
