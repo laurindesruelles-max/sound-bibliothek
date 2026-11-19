@@ -1,0 +1,108 @@
+{
+ "goldsmith": {
+  "stil": "Ermittlungsakte, dunkel-dokumentarisch: Papier, Büro, Stempel, Geld, Städte bei Nacht, Kino-Hits sparsam",
+  "max": {
+   "playful": 2.2,
+   "nature": 2.0
+  },
+  "verboten": [
+   "cartoon",
+   "sparkle",
+   "magic",
+   "zap"
+  ],
+  "dichte_max": 14,
+  "erkennung": [
+   "text_click (sound-library)",
+   "Tastatur bei Daten/Orten"
+  ],
+  "erlaubt": [],
+  "gesperrt": []
+ },
+ "meisterwerk": {
+  "stil": "Fertigung und Megaprojekte: echte Maschinen, Metall, Werkzeug; episch, aber nie verspielt oder Horror; nur echte Aufnahmen (keine synthetischen Sounds wie SFX Kit)",
+  "max": {
+   "playful": 2.0,
+   "dark": 2.0
+  },
+  "verboten": [
+   "cartoon",
+   "sparkle",
+   "magic",
+   "heartbeat",
+   "scream"
+  ],
+  "dichte_max": 18,
+  "erkennung": [
+   "text_click bei Text-Einblendungen",
+   "Tastatur key0–7 bei Daten/Orten"
+  ],
+  "erlaubt": [],
+  "gesperrt": [],
+  "nur_echt": true
+ },
+ "unterbau": {
+  "stil": "Infrastruktur im Kino-Look: tief, technisch, Daten, Wasser, Stahl; Spannung ja, Verspieltes nein",
+  "max": {
+   "playful": 2.0
+  },
+  "verboten": [
+   "cartoon",
+   "sparkle",
+   "magic"
+  ],
+  "dichte_max": 12,
+  "erkennung": [
+   "ub_klick (Text)",
+   "ub_hit (Titel/Kapitel)"
+  ],
+  "erlaubt": [],
+  "gesperrt": []
+ },
+ "denkmuster": {
+  "stil": "Psychologie im Whiteboard-Stil: leicht, freundlich, wenig Effekte, nur zu wichtigen Momenten",
+  "max": {
+   "dark": 1.0,
+   "epic": 1.5,
+   "mechanical": 2.5
+  },
+  "verboten": [
+   "marker",
+   "highlighter",
+   "stroke",
+   "scribble",
+   "drawing",
+   "pen on paper",
+   "braam",
+   "horror",
+   "scream",
+   "gun"
+  ],
+  "dichte_max": 6,
+  "erkennung": [
+   "klang (Kapitelkarte/Titel)",
+   "aha_funkeln (Erkenntnis)"
+  ],
+  "erlaubt": [],
+  "gesperrt": []
+ },
+ "nachtausgabe": {
+  "stil": "True Crime im Comic-Noir: Nacht, Regen, Türen, Schritte, Stempel, Zeitungen; echt und düster, nie albern",
+  "max": {
+   "playful": 2.0
+  },
+  "verboten": [
+   "cartoon",
+   "sparkle",
+   "magic",
+   "boing"
+  ],
+  "dichte_max": 14,
+  "erkennung": [
+   "logo_reveal_01 (Titeltafel)",
+   "impact_slam_35 (Stempel)"
+  ],
+  "erlaubt": [],
+  "gesperrt": []
+ }
+}
