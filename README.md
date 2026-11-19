@@ -22,7 +22,7 @@ SK="/home/claude/es-venv/bin/python /home/claude/sound-bibliothek/sk.py"
    True Peak, Effektdichte gegen das Profil, Earshot-Hörprotokoll + Bildbogen `sheet.png` (mit Read ansehen:
    Sitzen Hits auf den Schnitten? Ist die Stimme über der Musik?). Exit 1 → beheben.
 6. **Lizenzen:** `$SK credits ID …` → Zeilen für die Beschreibung (nur bei CC BY nötig).
-7. **Neue gute Funde** bleiben im Katalog → committen und pushen (catalog.json, emb.npy, sfx/).
+7. **Neue gute Funde** bleiben im Katalog → `git add --sparse catalog.json emb.npy sfx/ music/`, committen, pushen.
 
 ## Regeln
 - Earshot ist nur das **Gehör** (beschreiben, vergleichen, prüfen). Seine eingebaute Sound-Bank wird **nie** benutzt
